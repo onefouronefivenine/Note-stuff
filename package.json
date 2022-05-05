@@ -1,0 +1,16 @@
+{
+  "name": "note-stuff",
+  "version": "1.0.0",
+  "description": "write notes and revise them",
+  "main": "src/index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "electron ./src"
+  },
+  "author": "Jiaming Wang",
+  "license": "MIT",
+  "devDependencies": {
+    "electron": "^18.2.0",
+    "electron-packager": "^15.5.1"
+  }
+}

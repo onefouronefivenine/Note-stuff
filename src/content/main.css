@@ -1,0 +1,110 @@
+body, html {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+}
+
+.container {
+    display: flex;
+    height: 100vh;
+}
+
+.sidebar {
+    width: 20%;
+    margin: 0;
+    background-color: rgb(27, 27, 27);
+    display: flex;
+    flex-direction: column;
+}
+
+.options {
+    height: 5%;
+    padding: 10px;
+    background-color: rgb(36, 36, 36);
+    display:flex;
+    align-items:center;
+    margin-bottom: 15px;
+}
+
+.sidebar ul {
+    list-style-type: none;
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+    list-style-position: inside;
+    padding: 0;
+}
+
+.clickCover {
+    width: 40px; 
+    height: 40px; 
+    position: absolute; 
+    left: 10px;
+    transition: 0.2s;
+}
+
+.clickCover:hover {
+    background-color: rgba(46, 46, 46, 0.507);
+}
+
+.sidebar ul li {
+    width: 100%;
+    padding: 10px;
+    background-color: rgb(32, 32, 32);
+    height: 40px;
+    display:flex;
+    align-items:center;
+    font-size: large;
+    margin-bottom: 3px;
+    transition: 0.2s;
+}
+
+.sidebar ul li:hover {
+    background-color: rgb(189, 189, 189);
+}
+
+.sidebar ul li:nth-child(2n):hover {
+    background-color: rgb(189, 189, 189);
+}
+
+.sidebar ul li:nth-child(2n) {
+    background-color: rgb(36, 36, 36);
+}
+
+.content {
+    width: 80%;
+    margin: 0;
+    background-color: rgb(15, 15, 15);
+}
+
+input[type=button], input[type=submit], button {
+    border: none;
+    background-color: rgb(51, 51, 51);
+    border-radius: 0;
+    color: white;
+    padding:10px;
+    font-weight: lighter;
+    transition: 0.2s;
+    width: 20%;
+}
+
+input {
+    color: white;
+    background: rgb(27, 27, 27);
+    border-radius: 0;
+    border: 1px solid rgb(56, 56, 56);
+    border-radius: 2px;
+    width: 60%;
+    padding: 10px;
+}
+
+input[type=button]:hover, input[type=submit]:hover, button:hover {
+    background-color: rgb(65, 65, 65);
+}
+
+input[type=button]:active, input[type=submit]:active, button:active {
+    background-color: rgb(153, 153, 153);
+}

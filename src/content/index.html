@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="icons.css">
+    <link rel="stylesheet" href="popup.css">
+    <title>Notes</title>
+</head>
+<body>
+    <div class="container">
+        <div class="sidebar">
+            <div class="options">
+                <div style="width: 40px; height: 40px;display:flex;justify-content:center;align-items:center;">
+                    <div onclick="openAddNotePopup();" class="clickCover"></div>
+                    <object data="assets/plus-solid.svg" type="image/svg+xml" class="add"></object>
+                </div>
+            </div>
+            <ul id="notes">
+                
+            </ul>
+        </div>
+        <div class="content">
+            
+        </div>
+    </div>
+    <div class="noteSettings">
+        <form id="createForm">
+            <h1 style="text-align: center;">Create Note</h1>
+
+            <div>
+                <label>Title</label>
+                <input type="text" id="title"/>
+            </div>
+            <div>
+                <label>Save Location</label>
+                <input type="text" id="saveloc"/>
+            </div>
+           
+            <br>
+            <input type="submit" value="Create">
+        </form>
+    </div>
+    <div id="dick" style="opacity: 0; width: 0; height: 0; margin: 0; padding: 0; position: fixed;"></div>
+    <script src="renderer.js"></script>
+</body>
+</html>
