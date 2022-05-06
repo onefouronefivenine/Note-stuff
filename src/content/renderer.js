@@ -35,30 +35,8 @@ function addNote()
     closeAddNotePopup();
 }
 
-const noteContent = document.querySelector(".content");
-const invisibleTextarea = document.createElement("textarea");
-document.querySelector("#dick").append(invisibleTextarea);
-invisibleTextarea.style = "opacity: 0; width: 0; height: 0; margin: 0; padding: 0;";
 
-noteContent.addEventListener("click", e => {
-    invisibleTextarea.focus();
-})
 
-window.addEventListener("keydown", e => {
-    noteContent.innerText = invisibleTextarea.value;
-})
-
-window.addEventListener("keyup", e => {
-    noteContent.innerText = invisibleTextarea.value;
-})
-
-window.addEventListener("keypress", e => {
-    noteContent.innerText = invisibleTextarea.value;
-})
-
-setInterval(() => {
-    noteContent.innerText = invisibleTextarea.value;
-}, 0)
 
 document.querySelector("#createForm").addEventListener("submit", e => {
     addNote();

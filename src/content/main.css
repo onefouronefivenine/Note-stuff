@@ -7,6 +7,28 @@ body, html {
     color: rgb(238, 238, 238);
 }
 
+.cursor {
+    width: 1px;
+    height: 1em;
+    background-color: rgb(238, 238, 238);
+    animation: cursor-blink 1s steps(1, end) infinite;
+    position: relative;
+    top: 0;
+    left: 0;
+}
+
+@keyframes cursor-blink {
+    0% {
+        opacity: 1;
+    }
+    50% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
 .container {
     display: flex;
     height: 100vh;
@@ -60,6 +82,7 @@ body, html {
     font-size: large;
     margin-bottom: 3px;
     transition: 0.2s;
+    text-overflow: ellipsis;
 }
 
 .sidebar ul li:hover {
@@ -80,6 +103,18 @@ body, html {
     background-color: rgb(15, 15, 15);
     padding: 5px;
     font-weight: 100;
+    cursor: text;
+    word-wrap: break-word;
+    overflow-y: scroll;
+    white-space: pre;
+    font-size: 1em;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.line {
+    display: block;
+    overflow-wrap: break-word;
+    word-wrap: break-word;
 }
 
 input[type=button], input[type=submit], button {
