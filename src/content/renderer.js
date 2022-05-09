@@ -49,6 +49,57 @@ const editorFunctions = {
         }
     },
 
+    heading1: function()
+    {
+        const userSelection = window.getSelection();
+        const selectedTextRange = userSelection.getRangeAt(0);
+        const startContainer = selectedTextRange.startContainer;
+
+
+
+        if (startContainer.parentElement.tagName === "H1" ||
+            startContainer.parentElement.tagName === "H2"||
+            startContainer.parentElement.tagName === "H3"){
+            startContainer.parentElement.outerHTML = startContainer.parentElement.innerHTML;
+        } else {
+            this.modifyText("h1");
+        }
+    },
+
+    heading2: function()
+    {
+        const userSelection = window.getSelection();
+        const selectedTextRange = userSelection.getRangeAt(0);
+        const startContainer = selectedTextRange.startContainer;
+
+
+
+        if (startContainer.parentElement.tagName === "H1" ||
+            startContainer.parentElement.tagName === "H2"||
+            startContainer.parentElement.tagName === "H3"){
+            startContainer.parentElement.outerHTML = startContainer.parentElement.innerHTML;
+        } else {
+            this.modifyText("h2");
+        }
+    },
+
+    heading3: function()
+    {
+        const userSelection = window.getSelection();
+        const selectedTextRange = userSelection.getRangeAt(0);
+        const startContainer = selectedTextRange.startContainer;
+
+
+
+        if (startContainer.parentElement.tagName === "H1" ||
+            startContainer.parentElement.tagName === "H2"||
+            startContainer.parentElement.tagName === "H3"){
+            startContainer.parentElement.outerHTML = startContainer.parentElement.innerHTML;
+        } else {
+            this.modifyText("h3");
+        }
+    },
+
     convertToMD: function () {
         const textarea = document.querySelector(".typing-area");
         const convertTable = [
