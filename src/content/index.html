@@ -23,6 +23,21 @@
             </ul>
         </div>
         <div class="content">
+            <div class="typing-area" contenteditable></div>
+            <div class="tooltip">
+                <button onclick="editorFunctions.modifyText('b');"><strong>B</strong></button>
+                <button onclick="editorFunctions.modifyText('em', 'i');"><em 
+                    style="font-family: 'Times New Roman', Times, serif; font-weight: 300;">i</em></button>
+                <button onclick="editorFunctions.modifyText('u');"><u>U</u></button>
+                <button onclick="editorFunctions.modifyText('s', 'del');"><s>S</s></button>
+                <button onclick="editorFunctions.modifyText('code');" style="font-family:'Courier New', Courier, monospace;"><></button>
+                <button onclick="editorFunctions.modifyText('q');"><q>&nbsp;</q></button>
+                <button onclick="editorFunctions.modifyText('blockquote');"><q>bq</q></button>
+                <span>&nbsp;</span>
+                <button onclick="editorFunctions.modifyText('h1');">H1</button>
+                <button onclick="editorFunctions.modifyText('h2');">H2</button>
+                <button onclick="editorFunctions.modifyText('h3');">H3</button>
+            </div>
         </div>
     </div>
     <div class="noteSettings">
@@ -43,6 +58,7 @@
         </form>
     </div>
     <div id="dick" style="opacity: 0; width: 0; height: 0; margin: 0; padding: 0; position: fixed;"></div>
+    <script src="entityDecoder.js"></script>
     <script src="renderer.js"></script>
 </body>
 </html>
